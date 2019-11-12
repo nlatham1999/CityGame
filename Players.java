@@ -4,7 +4,6 @@ import java.util.*;
 
 private static class Building{
   private int money;
-  private String owner;
   private Hashtable<String, Integer> items;
   
   Players(int startAmount){
@@ -13,6 +12,7 @@ private static class Building{
     owner = "NONE";
   }
 
+  //add items to players inventory
   public void addItem(String item, int amount){
     if(items.contains(item)){
       int temp = items.get(item);
@@ -22,6 +22,7 @@ private static class Building{
     }
   }
 
+  //get the amount of a certain item that a player has
   public int getAmountOfItem(String item){
     if(items.contains(item)){
       return items.get(item);
@@ -30,6 +31,7 @@ private static class Building{
     }
   }
 
+  //remove an item from the inventory
   public void removeItems(String item, int amount){
     if(items.contains(item)){
       int temp = items.get(item);
@@ -41,10 +43,12 @@ private static class Building{
     }
   }
 
+  //add money to the inventory
   public void addMoney(int amount){
     money += amount;
   }
 
+  //remove money from the inventory
   public void removeMoney(int amount){
     money -= amount;
     if(money < 0){
@@ -52,16 +56,11 @@ private static class Building{
     }
   }
 
+  //get the amount of money that a player has
   public int getAmountOfMoney(){
     return money;
   }
 
-  public String displayOwner(){
-    return owner;
-  }
 
-  public void updateOwner(String newOwner){
-    owner = newOwner;
-  }
 }
 
