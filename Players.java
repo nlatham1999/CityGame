@@ -1,17 +1,24 @@
 import java.util.*;
 
-
-
-private static class Building{
+public class Players{
   private int money;
+  String name;
   private Hashtable<String, Integer> items;
   
-  Players(int startAmount){
+  Players(int startAmount, String name){
+    this.name = name;
     items = new Hashtable<String, Integer>();
     money = startAmount;
-    owner = "NONE";
   }
 
+  public String getName(){
+    return name;
+  }
+
+  public Hashtable<String, Integer> getItems(){
+    return items;
+  }
+  
   //add items to players inventory
   public void addItem(String item, int amount){
     if(items.contains(item)){
@@ -60,7 +67,5 @@ private static class Building{
   public int getAmountOfMoney(){
     return money;
   }
-
-
 }
 
