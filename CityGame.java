@@ -17,6 +17,8 @@ public class CityGame{
     private static void gameSetup(){
         players = new ArrayList<Players>();
         sc = new Scanner(System.in);
+        System.out.println("test");
+        sc.nextLine();
         System.out.println("how many people are playing?");
         int numberOfPlayers = sc.nextInt();
         sc.nextLine(); //clears the buffer

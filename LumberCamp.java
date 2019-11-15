@@ -1,18 +1,17 @@
 import java.util.*;
 
-public class GoldMine extends Business{
-    GoldMine(String owner){
+public class LumberCamp extends Business{
+    LumberCamp(String owner){
         this.owner = owner;
         workers = 10;
-        type = "GOLD MINE";
+        type = "LUMBER CAMP";
         moneyNeeded = workers*3;
         itemsNeeded = new Hashtable<String, Integer>();
-        itemsProduced = "GOLD";
+        itemsProduced = "WOOD";
         amountProduced = 100;  
 
         itemsNeeded.put("BREAD", 1);
-        itemsNeeded.put("CANDLES", 1);
-        itemsNeeded.put("IRON TOOLS", 1);
+        itemsNeeded.put("IRON TOOLS", 2);
         itemsNeeded.put("ROPE", 1);
     }
 }
