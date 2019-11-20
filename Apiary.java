@@ -1,17 +1,17 @@
 import java.util.*;
 
-public class IronSmithery extends Business{
-    IronSmithery(int owner){
+public class Apiary extends Business{
+    Apiary(int owner){
         this.owner = owner;
         workers = 5;
-        type = "IRON SMITHERY";
+        type = "APIARY";
         moneyNeeded = workers*5;
         itemsNeeded = new Hashtable<String, Integer>();
-        itemsProduced = "IRON TOOLS";
+        itemsProduced = "WAX";
         amountProduced = 10;  
 
         itemsNeeded.put("BREAD", 1);
-        itemsNeeded.put("IRON", 3);
+        itemsNeeded.put("WOOD", 4);
     }
 }
 

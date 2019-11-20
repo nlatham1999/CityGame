@@ -1,18 +1,20 @@
 import java.util.*;
 
-public class WheatFarm extends Business{
-    WheatFarm(int owner){
+public class HempFarm extends Business{
+    HempFarm(int owner){
         this.owner = owner;
         workers = 10;
-        type = "WHEAT FARM";
+        type = "HEMP FARM";
         moneyNeeded = workers*4;
         itemsNeeded = new Hashtable<String, Integer>();
-        itemsProduced = "WHEAT";
+        itemsProduced = "HEMP";
         amountProduced = 10;  
 
         itemsNeeded.put("BREAD", 1);
-        itemsNeeded.put("IRON TOOLS", 1);
-        itemsNeeded.put("WOOD", 1);
+        itemsNeeded.put("IRON TOOLS", 2);
     }
 }
+
+
+
 

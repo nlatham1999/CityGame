@@ -1,13 +1,13 @@
 import java.util.*;
 
-public class GoldMine extends Business{
-    GoldMine(int owner){
+public class IronMine extends Business{
+    IronMine(int owner){
         this.owner = owner;
         workers = 10;
-        type = "GOLD MINE";
+        type = "IRON MINE";
         moneyNeeded = workers*3;
         itemsNeeded = new Hashtable<String, Integer>();
-        itemsProduced = "GOLD";
+        itemsProduced = "IRON";
         amountProduced = 100;  
 
         itemsNeeded.put("BREAD", 1);

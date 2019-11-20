@@ -31,7 +31,7 @@ public class Players{
 
   //get the amount of a certain item that a player has
   public int getAmountOfItem(String item){
-    if(items.contains(item)){
+    if(items.containsKey(item)){
       return items.get(item);
     }else{
       return -1;

@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class RopeProducer extends Business{
-    RopeProducer(String owner){
+    RopeProducer(int owner){
         this.owner = owner;
         workers = 7;
         type = "ROPE PRODUCER";

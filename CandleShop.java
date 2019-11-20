@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class CandleShop extends Business{
-    CandleShop(String owner){
+    CandleShop(int owner){
         this.owner = owner;
         workers = 5;
         type = "CANDLE SHOP";

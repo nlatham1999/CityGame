@@ -2,20 +2,20 @@ import java.util.*;
 
 public class Business{
     protected int workers;
-    protected String owner;
+    protected int owner;
     protected String type;
-    private boolean inBusiness;
+    private boolean inBusiness = true;
     private int price;
     protected String itemsProduced;
     protected int amountProduced;
     protected Hashtable<String, Integer> itemsNeeded;
     protected int moneyNeeded;
     
-    public void setOwner(String owner){
+    public void setOwner(int owner){
         this.owner = owner;
     }
 
-    public String getOwner(){
+    public int getOwner(){
         return owner;
     }
 
@@ -51,6 +51,9 @@ public class Business{
         return moneyNeeded;
     }
 
+    public int getAmountProduced(){
+        return amountProduced;
+    }
     public int getNumberOfWorkers(){
         return workers;
     }
