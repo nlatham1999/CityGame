@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Fragment2TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <ScrollView
+            android:id="@+id/Fragment3ScrollForSale"
+            android:layout_width="175dp"
+            android:layout_height="339dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.361">
+
+            <RadioGroup
+                android:id="@+id/Fragment2ForSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Fragment2ButtonBuyBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy Business"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.116"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fragment3ScrollForSale"
+            app:layout_constraintVertical_bias="0.395" />
+
+        <ScrollView
+            android:id="@+id/Fragment2ScrollSellBusiness"
+            android:layout_width="173dp"
+            android:layout_height="275dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Fragment3ScrollForSale"
+            app:layout_constraintTop_toTopOf="@+id/Fragment3ScrollForSale"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioGroup
+                android:id="@+id/Fragment2RadioSellBusiness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Fragment2ButtonSellBusiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Put Business for Sale"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toEndOf="@+id/Fragment2ButtonBuyBusiness"
+            app:layout_constraintTop_toTopOf="@+id/Fragment2ButtonBuyBusiness"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <SeekBar
+            android:id="@+id/Fragment2SliderPrice"
+            android:layout_width="151dp"
+            android:layout_height="22dp"
+            android:max="1000"
+            android:progress="500"
+            app:layout_constraintBottom_toTopOf="@+id/Fragment2ButtonSellBusiness"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fragment2ScrollSellBusiness"
+            app:layout_constraintVertical_bias="0.424" />
+
+        <TextView
+            android:id="@+id/Fragment2TextViewPrice"
+            android:layout_width="100dp"
+            android:layout_height="29dp"
+            android:text="500"
+            app:layout_constraintBottom_toTopOf="@+id/Fragment2SliderPrice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.794"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Fragment2ScrollSellBusiness"
+            app:layout_constraintVertical_bias="0.521" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

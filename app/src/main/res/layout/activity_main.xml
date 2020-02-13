@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/playerNumberSlider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nicholaslatham.citygame.MainActivity">
+
+    <SeekBar
+        android:id="@+id/playerNumber"
+        android:layout_width="112dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="80dp"
+        android:max="10"
+        android:min="2"
+        android:progress="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/doneWithSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="finish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toEndOf="@+id/playerNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/playerNumText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Players"
+        app:layout_constraintBottom_toTopOf="@+id/playerNumber"
+        app:layout_constraintStart_toStartOf="@+id/playerNumber" />
+</android.support.constraint.ConstraintLayout>
